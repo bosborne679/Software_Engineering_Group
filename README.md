@@ -23,4 +23,4 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-When commiting a change run `git add <file(s)>` thenm `git commit -m <message>` and finally `git push origin <branch name>`
+When commiting a change run `git add <file(s)>` then `git commit -m <message>` and finally `git push origin <branch name>`
