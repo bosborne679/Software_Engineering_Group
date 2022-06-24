@@ -24,3 +24,24 @@ pip3 install -r requirements.txt
 ```
 
 When commiting a change run `git add <file(s)>` then `git commit -m <message>` and finally `git push origin <branch name>`
+
+## Running
+
+This script can be ran in two seperate instances which will change how it is being ran.
+
+### Developer
+
+If you are running this as a developer:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 -m MCS
+```
+
+This will start the server. From there it will await connections.
+
+### Network Admin
+
+From the server simply run `python3 -m MCS`. Future iterations will have this ran manually at start up.
