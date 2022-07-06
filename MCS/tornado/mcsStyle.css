@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(194, 186, 181);
+}
+
+.flex-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center space-around;
+
+
+}
+
+.flex-menue {
+    display: block;
+}
+
+.flex-chat {
+    display: flex;
+    flex-flow: column;
+}
