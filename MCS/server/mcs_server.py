@@ -16,6 +16,8 @@ class MCSServer():
         self._host = host
         self._port = port
         self._mcssocket = None
+        self._sel = selectors.DefaultSelector()
+
 
     @property
     def mcssocket(self):
@@ -45,6 +47,7 @@ class MCSServer():
         #creates socket
         self._mcssocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._mcssocket.bind(self._host,self._port)
+        self._mcssocket.setblocking(False)
 
     def run_server(self):
         pass

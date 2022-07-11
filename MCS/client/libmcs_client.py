@@ -1,10 +1,9 @@
 import sys
 import selectors
 import json
-import io
+import io 
 import struct
 
-#creates a message class with values needed to send. Initializes when creaated with the socket, the selected event, the request, and address. also builds empty json data
 class Message:
     def __init__(self, selector, sock, addr, request):
         self.selector = selector
